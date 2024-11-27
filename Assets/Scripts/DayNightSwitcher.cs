@@ -17,6 +17,8 @@ public class MoonLightSwitcher : MonoBehaviour
 
     private bool isDay = true; // Indica si es de día o de noche
 
+    public Light[] streetLights; // Array de luces de los postes (asígnalas en el Inspector)
+
     void Update()
     {
         if (Input.GetKeyDown(toggleKey))
@@ -35,6 +37,9 @@ public class MoonLightSwitcher : MonoBehaviour
                 directionalLight.transform.rotation = Quaternion.Euler(nightRotation);
                 directionalLight.color = moonLightColor;
                 directionalLight.intensity = moonIntensity;
+
+                // Encender las luces de los postes
+                SetStreetLightsState(true);
             }
             else
             {
@@ -42,9 +47,26 @@ public class MoonLightSwitcher : MonoBehaviour
                 directionalLight.transform.rotation = Quaternion.Euler(dayRotation);
                 directionalLight.color = dayLightColor;
                 directionalLight.intensity = dayIntensity;
+
+                // Apagar las luces de los postes
+                SetStreetLightsState(false);
             }
 
             isDay = !isDay; // Alternar el estado
+        }
+    }
+
+    void SetStreetLightsState(bool state)
+    {
+        if (streetLights != null)
+        {
+            foreach (Light streetLight in streetLights)
+            {
+                if (streetLight != null)
+                {
+                    streetLight.enabled = state; // Encender o apagar la luz
+                }
+            }
         }
     }
 }
