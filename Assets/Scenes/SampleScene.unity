@@ -1195,7 +1195,7 @@ PrefabInstance:
       objectReference: {fileID: 1959206072}
     - target: {fileID: 2678198529221007331, guid: 0cf667e1691fc8049b42efad2103296d, type: 3}
       propertyPath: speed
-      value: 10
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 2678198529221007331, guid: 0cf667e1691fc8049b42efad2103296d, type: 3}
       propertyPath: target
@@ -2258,7 +2258,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.31, y: 1, z: 1.93}
+  m_Size: {x: 0.3, y: 0.3, z: 0.3}
   m_Center: {x: 0, y: 1.5, z: 0.94}
 --- !u!1 &657898967
 GameObject:
@@ -3005,7 +3005,7 @@ PrefabInstance:
       objectReference: {fileID: 1959206072}
     - target: {fileID: 2678198529221007331, guid: 0cf667e1691fc8049b42efad2103296d, type: 3}
       propertyPath: speed
-      value: 10
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 2678198529221007331, guid: 0cf667e1691fc8049b42efad2103296d, type: 3}
       propertyPath: target
@@ -3550,7 +3550,7 @@ PrefabInstance:
       objectReference: {fileID: 1959206072}
     - target: {fileID: 2678198529221007331, guid: 0cf667e1691fc8049b42efad2103296d, type: 3}
       propertyPath: speed
-      value: 10
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 2678198529221007331, guid: 0cf667e1691fc8049b42efad2103296d, type: 3}
       propertyPath: target
@@ -5091,7 +5091,7 @@ PrefabInstance:
       objectReference: {fileID: 1959206072}
     - target: {fileID: 2678198529221007331, guid: 0cf667e1691fc8049b42efad2103296d, type: 3}
       propertyPath: speed
-      value: 10
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 2678198529221007331, guid: 0cf667e1691fc8049b42efad2103296d, type: 3}
       propertyPath: target
@@ -5414,7 +5414,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.31, y: 1, z: 1.93}
+  m_Size: {x: 0.3, y: 0.3, z: 0.3}
   m_Center: {x: 0, y: 1.5, z: 0.94}
 --- !u!1 &1209281842
 GameObject:
@@ -6390,7 +6390,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.31, y: 1, z: 1.93}
+  m_Size: {x: 0.3, y: 0.3, z: 0.3}
   m_Center: {x: 0, y: 1.5, z: 0.94}
 --- !u!4 &1357787977 stripped
 Transform:
@@ -7696,7 +7696,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.31, y: 1, z: 1.93}
+  m_Size: {x: 0.3, y: 0.3, z: 0.3}
   m_Center: {x: 0, y: 1.5, z: 0.94}
 --- !u!1001 &1707756803
 PrefabInstance:

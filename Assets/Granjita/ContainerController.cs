@@ -58,9 +58,9 @@ public class ContainerController : MonoBehaviour
             }
             else if (distance < followDistance - 0.4f)
             {
-                speed = 10;
+                float temporalSpeed = 15;
                 // Move away from the player
-                Vector3 targetPosition = transform.position + (direction * speed * Time.deltaTime * -1);
+                Vector3 targetPosition = transform.position + (direction * temporalSpeed * Time.deltaTime * -1);
                 enemyRigidbody.MovePosition(targetPosition);
             }
         }

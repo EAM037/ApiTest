@@ -118,3 +118,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c04a2d0506eb3b459d1d57b41911903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  silo: {fileID: 0}
+  enemyRigidbody: {fileID: 0}
+  followDistance: 4
+  speed: 10
+  direction: {x: 0, y: 0}
+  personalSpaceRadius: 1.5
+  repulsionForce: 2
+  siloFlag: 0
