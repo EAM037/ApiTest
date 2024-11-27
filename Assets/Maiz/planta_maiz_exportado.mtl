@@ -1,0 +1,12 @@
+newmtl verde_claro
+Kd 0.5032876 0.6792453 0.3043788
+d 1
+
+newmtl verde
+Kd 0.5982107 0.754717 0.2313991
+d 1
+
+newmtl amarillo
+Kd 0.8962264 0.7864342 0.1817818
+d 1
+
