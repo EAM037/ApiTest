@@ -2552,6 +2552,20 @@ MonoBehaviour:
   nightRotation: {x: 30, y: -50, z: 0}
   moonLightColor: {r: 0.4, g: 0.5, b: 0.8, a: 1}
   moonIntensity: 0.5
+  streetLights:
+  - {fileID: 147916272}
+  - {fileID: 657898969}
+  - {fileID: 949553405}
+  - {fileID: 1864993902}
+  - {fileID: 1319943507}
+  - {fileID: 729921797}
+  - {fileID: 1285221397}
+  - {fileID: 454467876}
+  - {fileID: 852536566}
+  - {fileID: 1384595955}
+  - {fileID: 326277588}
+  - {fileID: 1820452191}
+  - {fileID: 1018897090}
 --- !u!1 &723921068
 GameObject:
   m_ObjectHideFlags: 0
