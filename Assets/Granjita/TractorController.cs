@@ -53,6 +53,7 @@ public class TractorController : MonoBehaviour
         {
             Transform containerTransform = container.transform;
             ContainerController.followDistance = 1;
+            ContainerController.speed = 20;
             if (Vector3.Distance(transform.position, containerTransform.position) < 2f)
             {
                 ContainerController.siloFlag = true;
@@ -62,7 +63,6 @@ public class TractorController : MonoBehaviour
         }
         if (api.values.Count > 0 && !startFlag && !endFlag)
         {
-            Debug.Log(api.values[0]);
             startFlag = true;
             Vector3 startTarget = new Vector3(api.values[step].Item1, transform.position.y, api.values[step].Item2);
             Vector3 direction = (startTarget - transform.position).normalized;
@@ -109,7 +109,7 @@ public class TractorController : MonoBehaviour
 
     IEnumerator UpdatePathConstantly()
     {
-        while (true)
+        while (api.connectionFlag)
         {
             api.DoRequest(tractorId);
             yield return new WaitForSeconds(1f);

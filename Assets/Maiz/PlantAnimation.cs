@@ -10,12 +10,15 @@ public class PlantAnimation : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Colisión detectada con: " + other.name); // Mensaje de depuración
 
         // Detecta colisión con el tag "tractor"
         if (other.CompareTag("tractor") && !isAnimating)
         {
-            Debug.Log("Colisión con tractor detectada. Iniciando animación.");
+            TractorController tractorController = other.GetComponent<TractorController>();
+            if (tractorController != null)
+            {
+                tractorController.currentLoad++;
+            }
             StartCoroutine(ElevateAndDisappear());
         }
     }
